@@ -1,10 +1,10 @@
 :root{
-	--fuschia: #E53888; /*terracotta*/
-	--burgundy: #670D2F; /*sage*/
-	--softpink:#FFB8E0; /*mustard*/
-	--lightpink: #FFEDFA; /*cream*/
-	--darkpurple: #533B4D; /*charcoal*/
-	--pink: #FF90BB; /*pink*/
+	--fuschia: #E53888;
+	--burgundy: #670D2F;
+	--softpink:#FFB8E0;
+	--lightpink: #FFEDFA;
+	--darkpurple: #533B4D;
+	--pink: #FF90BB;
 }
 
 *{
@@ -55,6 +55,33 @@ header{
 .nav-links a:hover{
 	color: var(--fuschia);
 }
+
+/*.fa-bars{
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.hamburger{
+	display: none;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger i {
+	color: var(--fuschia);
+	font-size: 30px;
+}
+
+/*header a i{
+	height: 45px;
+}
+
+/*header nav .hamburger{
+	display: none;
+	color: var(--fuschia);
+}*/
 
 .cta-btn{
 	background: var(--pink);
@@ -364,6 +391,31 @@ footer{
 
 /* Responsive Design */
 @media (max-width: 768px){
+	.hero{
+		grid-template-columns: 1fr;
+		text-align: center;
+		padding-top: 6rem;
+	}
+
+	.hero-image{
+		order: -1;
+	}
+
+	.about{
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.nav-links{
+		display: none;
+	}
+
+	.menu-filters{
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 480px){
 	.hero{
 		grid-template-columns: 1fr;
 		text-align: center;
